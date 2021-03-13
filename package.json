@@ -1,6 +1,6 @@
 {
   "name": "yaml-include",
-  "version": "0.0.0-development",
+  "version": "0.0.1",
   "description": "Custom YAML tag definitions to support modular YAML documents with js-yaml.",
   "main": "index.js",
   "scripts": {
