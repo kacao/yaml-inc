@@ -1,19 +1,13 @@
 # yaml-include
 
-[![Build Status](https://travis-ci.org/claylo/yaml-include.svg?branch=master)](https://travis-ci.org/claylo/yaml-include)
-[![Coverage Status](https://coveralls.io/repos/claylo/yaml-include/badge.svg)](https://coveralls.io/r/claylo/yaml-include)
-[![Dependency Status](https://david-dm.org/claylo/yaml-include.svg)](https://david-dm.org/claylo/yaml-include)
-[![devDependency Status](https://david-dm.org/claylo/yaml-include/dev-status.svg)](https://david-dm.org/claylo/yaml-include#info=devDependencies)
-[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/) [![Greenkeeper badge](https://badges.greenkeeper.io/claylo/yaml-include.svg)](https://greenkeeper.io/)
-
-
+[Updated to use js-yaml 4]
 
 This package provides support custom tags in a [YAML](http://yaml.org/) document that facilitate inclusion of external `.yaml` files, or directories of `.yaml` files. This functionality is of course frowned upon by the YAML core team, but I find YAML too damn useful as a configuration format to _not_ support inclusions. If you feel the same way, these tags will be helpful to you.
 
 ## Installation
 
 ```shell
-$ npm install yaml-include
+$ npm install @kacao/yaml-inc
 ```
 
 ## Usage
@@ -22,7 +16,7 @@ A very small script can be created to leverage the `yaml-include` tags. The scri
 
 ```js
 var yaml = require('js-yaml');
-var yamlinc = require('yaml-include');
+var yamlinc = require('@kacao/yaml-inc');
 var fs = require('fs');
 var p = require('path');
 

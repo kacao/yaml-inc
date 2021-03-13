@@ -9,7 +9,7 @@ var YamlIncludeDirType = require('./lib/dir');
 var YamlIncludeFileType = require('./lib/file');
 
 var YAML_TYPES = [YamlIncludeDirType, YamlIncludeFileType];
-var YAML_INCLUDE_SCHEMA = yaml.Schema.create(YAML_TYPES);
+var YAML_INCLUDE_SCHEMA = yaml.DEFAULT_SCHEMA.extend(YAML_TYPES);
 var basefile = '';
 
 // so we know where to find files referenced relative to the base file
